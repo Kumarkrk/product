@@ -11,7 +11,7 @@ app.listen(process.env.PORT,()=>
 {
     console.log(`server running sucessfully on port number ${process.env.PORT}`);
 });
-mongoose.connect(process.env.MONGO_URL).then(()=>
+mongoose.connect(process.env.MONGO_URI).then(()=>
 {
     console.log(`mongoose connected scuesfully`);
 }).catch((err)=>{
