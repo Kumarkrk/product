@@ -9,7 +9,7 @@ export default function Producttable({ setSelectedProduct }) {
 
     try {
 
-      const res = await axios.get("http://localhost:4000/api");
+      const res = await axios.get("https://product-bza3.onrender.com/api");
 
       setProducts(res.data);
 
@@ -31,7 +31,7 @@ export default function Producttable({ setSelectedProduct }) {
 
     try {
 
-      await axios.delete(`http://localhost:4000/api/${id}`);
+      await axios.delete(`https://product-bza3.onrender.com/api/${id}`);
 
       fetchProducts();
 
