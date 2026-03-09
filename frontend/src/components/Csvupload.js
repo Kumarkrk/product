@@ -22,7 +22,7 @@ function Csvupload() {
     try {
 
       await axios.post(
-        "http://localhost:4000/api/bulk-upload",
+        "https://product-bza3.onrender.com/api/bulk-upload",
         formData
       );
 
