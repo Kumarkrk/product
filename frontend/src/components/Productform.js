@@ -45,14 +45,14 @@ export default function ProductForm({ selectedProduct }) {
       if (selectedProduct) {
 
         await axios.put(
-          `http://localhost:4000/api/${selectedProduct._id}`,
+          `https://product-bza3.onrender.com/api/${selectedProduct._id}`,
           formData
         );
 
       } else {
 
         await axios.post(
-          "http://localhost:4000/api",
+          "https://product-bza3.onrender.com/api",
           formData
         );
 
